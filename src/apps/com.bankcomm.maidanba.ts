@@ -14,8 +14,24 @@ export default defineGkdApp({
           fastQuery: true,
           actionMaximum: 1,
           activityIds: 'com.bankcomm.maidanba.activity.MainActivity',
-          matches: '[text="广告"] + ImageView[vid="ivADClose"][clickable=true]',
+          matches:
+            '[text="广告"] + ImageView[vid="ivADClose"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/34684876',
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '开屏广告-启动页广告',
+      desc: '启动页全屏广告，点击右上角「跳过」',
+      rules: [
+        {
+          key: 0,
+          fastQuery: true,
+          actionMaximum: 1,
+          activityIds: 'com.bankcomm.maidanba.activity.SplashActivity',
+          matches: '@[vid="ll_ad_skip"] > [text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/i/34685602',
         },
       ],
     },
