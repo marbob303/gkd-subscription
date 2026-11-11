@@ -14,8 +14,7 @@ export default defineGkdApp({
           fastQuery: true,
           actionMaximum: 1,
           activityIds: 'com.bankcomm.maidanba.activity.MainActivity',
-          matches:
-            '[text="广告"] + ImageView[vid="ivADClose"][clickable=true]',
+          matches: '[text="广告"] + ImageView[vid="ivADClose"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/34684876',
         },
       ],
